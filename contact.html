@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | Mikke</title>
+  <meta name="description" content="Mikkeへのお問い合わせはこちらから。LINE・X・メールから24時間受付中。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mikke<span class="logo-dot">.</span></a>
+      <nav class="nav">
+        <a href="index.html">トップ</a>
+        <a href="services.html">サービス・料金</a>
+        <a href="works.html">実績</a>
+        <a href="faq.html">よくある質問</a>
+        <a href="contact.html" class="nav-cta">お問い合わせ</a>
+      </nav>
+      <button class="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container page-header-inner">
+        <div class="breadcrumb">
+          <a href="index.html">トップ</a><span>/</span><span>お問い合わせ</span>
+        </div>
+        <h1 class="page-header-title">お問い合わせ</h1>
+        <p class="page-header-sub">
+          無理な営業は一切しません。「自分のお店に合うか相談したい」だけでも大歓迎です。
+        </p>
+      </div>
+    </section>
+
+    <!-- 連絡手段 -->
+    <section class="section">
+      <div class="container">
+        <p class="section-eyebrow" style="text-align: center;">Quick Contact</p>
+        <h2 class="section-title" style="text-align: center;">お好きな方法でどうぞ</h2>
+        <p class="section-sub" style="text-align: center; margin-left: auto; margin-right: auto;">
+          3つの連絡手段をご用意しています。
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3 class="contact-label">LINE公式アカウント</h3>
+            <p class="contact-value">気軽にチャットで相談したい方へ</p>
+            <a href="#" target="_blank" rel="noopener" class="contact-btn">LINEで相談する</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">𝕏</div>
+            <h3 class="contact-label">X（Twitter）DM</h3>
+            <p class="contact-value">普段Xを使っている方へ</p>
+            <a href="#" target="_blank" rel="noopener" class="contact-btn">DMを送る</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉</div>
+            <h3 class="contact-label">メール</h3>
+            <p class="contact-value">your-email@example.com</p>
+            <a href="mailto:your-email@example.com" class="contact-btn">メールを送る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="section section-soft">
+      <div class="container">
+        <p class="section-eyebrow" style="text-align: center;">Form</p>
+        <h2 class="section-title" style="text-align: center;">お問い合わせフォーム</h2>
+        <p class="section-sub" style="text-align: center; margin-left: auto; margin-right: auto;">
+          詳しくご相談されたい方は、こちらのフォームからどうぞ。
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label class="form-label" for="name">お名前<span class="form-required">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="例：山田 太郎" />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="company">お店・会社名（任意）</label>
+            <input type="text" id="company" name="company" class="form-input" placeholder="例：カフェ・みっけ" />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="email">メールアドレス<span class="form-required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="例：example@email.com" />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="plan">ご興味のあるプラン</label>
+            <select id="plan" name="plan" class="form-input">
+              <option value="">選んでください</option>
+              <option value="light">Light（3万円〜）</option>
+              <option value="standard">Standard（7万円〜）</option>
+              <option value="pro">Pro（12万円〜）</option>
+              <option value="undecided">まだ決まっていない／相談したい</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="message">ご相談内容<span class="form-required">*</span></label>
+            <textarea id="message" name="message" class="form-textarea" required placeholder="どんなホームページにしたいか、現状の悩みなどをお書きください。"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            送信する <span class="btn-arrow">→</span>
+          </button>
+          <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 16px; text-align: center;">
+            ※ 通常24時間以内にご返信します。週末・祝日は翌営業日となる場合があります。
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Mikke<span style="color: var(--color-accent);">.</span></div>
+          <p class="footer-tag">
+            あなたのお店を、お客様に<br />
+            みっけてもらうホームページ制作。
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">サービス</p>
+          <ul class="footer-list">
+            <li><a href="services.html">サービス・料金</a></li>
+            <li><a href="works.html">制作実績</a></li>
+            <li><a href="faq.html">よくある質問</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">フォローする</p>
+          <ul class="footer-list">
+            <li><a href="#" target="_blank" rel="noopener">X（Twitter）</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LINE公式</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Mikke. All rights reserved.</span>
+        <span>Web Design Studio</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
